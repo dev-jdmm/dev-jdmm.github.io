@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jonathan Monroy Mancera · Junior Software Engineer</title>
+  <meta name="description" content="Portfolio of Jonathan Monroy Mancera, junior software engineer from Bogotá, Colombia. Front-end and back-end web applications with AI integration.">
+  <meta name="author" content="Jonathan Monroy Mancera">
+  <meta name="theme-color" content="#0a1f44">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jonathan Monroy Mancera · Junior Software Engineer">
+  <meta property="og:description" content="Where languages and software coexist. Front-end, back-end and AI-powered web applications.">
+  <meta property="og:image" content="assets/img/og-image.png">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" aria-label="Jonathan Monroy Mancera, back to top">
+        <span class="brand__mark">JM</span>
+        <span class="brand__name">Jonathan Monroy</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero__glow hero__glow--a" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--b" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow hero-in" style="--d:0">
+            <span class="dot"></span> Open to opportunities · Bogotá, Colombia
+          </p>
+          <h1 class="hero__title hero-in" style="--d:1">
+            Jonathan<br><span class="grad">Monroy Mancera</span>
+          </h1>
+          <p class="hero__role hero-in" style="--d:2">
+            Junior Software Engineer
+            <span class="sep">/</span>
+            <span class="rotator" id="rotator" aria-live="polite">Front-end developer</span>
+          </p>
+          <p class="hero__lead hero-in" style="--d:3">
+            Where languages and software coexist. I design and build complete web applications,
+            from polished interfaces to the servers and AI models behind them.
+          </p>
+          <div class="hero__actions hero-in" style="--d:4">
+            <a class="btn btn--primary" href="#projects">
+              View my projects
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          </div>
+          <ul class="hero__social hero-in" style="--d:5" aria-label="Profiles">
+            <li><a href="https://github.com/dev-jdmm" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/jonathan-monroy-1252002a7" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+            </a></li>
+            <li><a href="mailto:business.jonathan.monroy@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </a></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual hero-in" style="--d:3" aria-hidden="true">
+          <div class="code-card" id="codeCard">
+            <div class="code-card__bar">
+              <span></span><span></span><span></span>
+              <em>jonathan.js</em>
+            </div>
+<pre class="code-card__body"><code id="typed"></code><span class="caret"></span></pre>
+          </div>
+          <div class="float-chip float-chip--a"><b>4</b> projects built</div>
+          <div class="float-chip float-chip--b"><i class="pulse"></i> AI integration</div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__intro reveal">
+          <p class="kicker">About me</p>
+          <h2 class="section__title">Building software people can rely on, one project at a time.</h2>
+        </div>
+        <div class="about__body">
+          <p class="reveal">
+            I'm a junior software engineer who enjoys turning ideas into complete, working products.
+            Through my own projects and academic work I have shipped <strong>front-end and back-end
+            applications</strong> end to end: visual web editors, workforce time-tracking tools and
+            AI-powered assistants.
+          </p>
+          <p class="reveal">
+            I learn by building. Every project teaches me something new, from structuring a clean
+            Express API and validating every input, to connecting large language models in a way that is
+            useful, safe and fast. I care about readable code, careful testing and interfaces that feel
+            effortless to use.
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="pillars">
+          <li class="pillar reveal">
+            <span class="pillar__icon"><svg viewBox="0 0 24 24"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M13.5 5l-3 14"/></svg></span>
+            <h3>Full-stack fundamentals</h3>
+            <p>Semantic HTML, modern CSS and JavaScript on the client; Node.js, Express and databases on the server.</p>
+          </li>
+          <li class="pillar reveal">
+            <span class="pillar__icon"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3.2"/></svg></span>
+            <h3>AI implementation</h3>
+            <p>Integrating LLM providers such as OpenAI, xAI, OpenRouter and Groq into real product workflows.</p>
+          </li>
+          <li class="pillar reveal">
+            <span class="pillar__icon"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></span>
+            <h3>Quality-minded</h3>
+            <p>Input validation, offline-safe data handling and automated testing practices with pytest.</p>
+          </li>
+        </ul>
+        <ul class="stats">
+          <li class="stat reveal"><b data-count="4">0</b><span>Projects built</span></li>
+          <li class="stat reveal"><b data-count="5">0</b><span>Certifications</span></li>
+          <li class="stat reveal"><b data-count="7">0</b><span>Core technologies</span></li>
+          <li class="stat reveal"><b data-count="4">0</b><span>AI APIs integrated</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section--tint" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker">Technical skills</p>
+          <h2 class="section__title">The tools I build with</h2>
+          <p class="section__sub">My core stack, plus the libraries and services I've worked with in my projects.</p>
+        </div>
+
+        <ul class="skills">
+          <li class="skill reveal" style="--i:0"><span class="skill__tag">&lt;/&gt;</span><div><h3>HTML</h3><p>Semantic, accessible markup</p></div></li>
+          <li class="skill reveal" style="--i:1"><span class="skill__tag">{ }</span><div><h3>CSS</h3><p>Responsive layouts &amp; animation</p></div></li>
+          <li class="skill reveal" style="--i:2"><span class="skill__tag">JS</span><div><h3>JavaScript</h3><p>Modern ES, DOM &amp; async APIs</p></div></li>
+          <li class="skill reveal" style="--i:3"><span class="skill__tag">N</span><div><h3>Node.js</h3><p>Express servers &amp; REST APIs</p></div></li>
+          <li class="skill reveal" style="--i:4"><span class="skill__tag">PG</span><div><h3>PostgreSQL</h3><p>Relational data modeling</p></div></li>
+          <li class="skill reveal" style="--i:5"><span class="skill__tag">M</span><div><h3>MongoDB</h3><p>Document databases</p></div></li>
+          <li class="skill reveal" style="--i:6"><span class="skill__tag">AI</span><div><h3>AI implementations</h3><p>LLM APIs &amp; prompt design</p></div></li>
+        </ul>
+
+        <div class="marquee reveal" aria-label="Other tools I have used">
+          <div class="marquee__track">
+            <span>Express</span><span>REST APIs</span><span>Microsoft Entra ID (MSAL)</span><span>JWT</span><span>Tailwind CSS</span><span>Ace Editor</span><span>JSZip</span><span>OpenAI API</span><span>Groq API</span><span>OpenRouter</span><span>xAI</span><span>Pytest</span><span>Git &amp; GitHub</span><span>Nodemon</span>
+            <span aria-hidden="true">Express</span><span aria-hidden="true">REST APIs</span><span aria-hidden="true">Microsoft Entra ID (MSAL)</span><span aria-hidden="true">JWT</span><span aria-hidden="true">Tailwind CSS</span><span aria-hidden="true">Ace Editor</span><span aria-hidden="true">JSZip</span><span aria-hidden="true">OpenAI API</span><span aria-hidden="true">Groq API</span><span aria-hidden="true">OpenRouter</span><span aria-hidden="true">xAI</span><span aria-hidden="true">Pytest</span><span aria-hidden="true">Git &amp; GitHub</span><span aria-hidden="true">Nodemon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker">Selected work</p>
+          <h2 class="section__title">Projects</h2>
+          <p class="section__sub">Independent and academic projects, each built from the ground up.</p>
+        </div>
+
+        <div class="filters reveal" role="tablist" aria-label="Filter projects">
+          <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter" data-filter="progress" role="tab" aria-selected="false">In progress</button>
+          <button class="filter" data-filter="undeployed" role="tab" aria-selected="false">Not deployed</button>
+          <button class="filter" data-filter="academic" role="tab" aria-selected="false">Academic</button>
+          <span class="filter__pill" aria-hidden="true"></span>
+        </div>
+
+        <div class="projects" id="projectList">
+
+          <!-- Timekeeper -->
+          <article class="project reveal" data-status="undeployed">
+            <button class="project__media" data-full="assets/img/projects/timekeeper.webp" data-caption="Timekeeper: live shift timer with plan vs. actual timeline" aria-label="Enlarge Timekeeper screenshot">
+              <span class="browser"><i></i><i></i><i></i><em>timekeeper / index.html</em></span>
+              <img src="assets/img/projects/timekeeper.webp" alt="Timekeeper dashboard showing a running break timer, the planned vs. actual shift timeline and totals per activity" loading="lazy" width="1600" height="1000">
+            </button>
+            <div class="project__body">
+              <div class="project__meta">
+                <span class="badge badge--undeployed">Not deployed</span>
+                <span class="project__type">Full-stack web app</span>
+              </div>
+              <h3 class="project__title">Timekeeper</h3>
+              <p class="project__desc">
+                A workforce time-tracking application. Employees sign in with their work Microsoft account,
+                start a shift and switch between activities like productive work, breaks, lunch and active
+                pauses, while the app compares their day against the scheduled plan.
+              </p>
+              <ul class="project__points">
+                <li>Live timers with per-activity limits and over-limit alerts</li>
+                <li>Plan vs. actual timeline drawn from the daily schedule</li>
+                <li>Offline-first: records queue on the device and sync in batches</li>
+                <li>Server-validated data and clock correction against the server time</li>
+              </ul>
+              <ul class="chips" aria-label="Built with">
+                <li>Node.js</li><li>Express 5</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Microsoft Entra ID · MSAL</li><li>JWT (jose)</li><li>REST API</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Aegis -->
+          <article class="project project--flip reveal" data-status="progress">
+            <button class="project__media" data-full="assets/img/projects/aegis.webp" data-caption="Aegis Workshop: visual editor with a sample page in progress" aria-label="Enlarge Aegis Workshop screenshot">
+              <span class="browser"><i></i><i></i><i></i><em>aegis-workshop / index.html</em></span>
+              <img src="assets/img/projects/aegis.webp" alt="Aegis Workshop editor with component palette, layers panel, a landing page on the canvas and the property inspector" loading="lazy" width="1600" height="1000">
+            </button>
+            <div class="project__body">
+              <div class="project__meta">
+                <span class="badge badge--progress"><i class="pulse"></i> In progress · Beta 1.2</span>
+                <span class="project__type">Visual web editor</span>
+              </div>
+              <h3 class="project__title">Aegis Workshop</h3>
+              <p class="project__desc">
+                A drag-and-drop editor for designing websites visually. Users place components on a canvas,
+                fine-tune every style property, add interactive behavior and export the result as clean,
+                standalone HTML and CSS.
+              </p>
+              <ul class="project__points">
+                <li>Multi-page documents with layers, nesting, Flex and Grid containers</li>
+                <li>Inspector for typography, spacing, shadows, transforms and hover/focus states</li>
+                <li>No-code actions: triggers, conditions and animation presets</li>
+                <li>Zoom, pan, grid and snap, plus single-file or ZIP export</li>
+              </ul>
+              <ul class="chips" aria-label="Built with">
+                <li>JavaScript</li><li>HTML</li><li>CSS</li><li>Node.js</li><li>Express 5</li><li>JSZip</li><li>Font Awesome</li><li>Nodemon</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Aether -->
+          <article class="project reveal" data-status="undeployed">
+            <button class="project__media" data-full="assets/img/projects/aether.webp" data-caption="Aether · Coding Forge: AI coding studio welcome screen" aria-label="Enlarge Aether screenshot">
+              <span class="browser"><i></i><i></i><i></i><em>aether / index.html</em></span>
+              <img src="assets/img/projects/aether.webp" alt="Aether Coding Forge welcome screen with a terminal-style prompt over an animated code-rain background" loading="lazy" width="1600" height="1000">
+            </button>
+            <div class="project__body">
+              <div class="project__meta">
+                <span class="badge badge--undeployed">Not deployed</span>
+                <span class="project__type">AI coding studio</span>
+              </div>
+              <h3 class="project__title">Aether · Coding Forge</h3>
+              <p class="project__desc">
+                An in-browser coding studio with a built-in AI companion. It pairs a full code editor with
+                a chat assistant that always knows the code you're working on, so you can ask for fixes,
+                features or explanations without leaving the page.
+              </p>
+              <ul class="project__points">
+                <li>Code editor with multi-language support and project versions</li>
+                <li>Context-aware AI chat with selectable providers and models</li>
+                <li>Markdown and syntax-highlighted answers, editable and resendable</li>
+                <li>Modular architecture ready for a secure Express AI proxy</li>
+              </ul>
+              <ul class="chips" aria-label="Built with">
+                <li>JavaScript</li><li>HTML</li><li>Tailwind CSS</li><li>Ace Editor</li><li>Marked</li><li>Highlight.js</li><li>OpenAI · xAI · OpenRouter</li><li>Node.js · Express</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- PerfilTech -->
+          <article class="project project--flip reveal" data-status="academic">
+            <button class="project__media" data-full="assets/img/projects/perfiltech.webp" data-caption="PerfilTech IA v2: AI-powered profile analysis form" aria-label="Enlarge PerfilTech IA screenshot">
+              <span class="browser"><i></i><i></i><i></i><em>perfiltech-ia / index.html</em></span>
+              <img src="assets/img/projects/perfiltech.webp" alt="PerfilTech IA form asking for education, skills, projects, experience and target role, with a results panel" loading="lazy" width="1600" height="1000">
+            </button>
+            <div class="project__body">
+              <div class="project__meta">
+                <span class="badge badge--academic">Academic project</span>
+                <span class="project__type">AI profile analysis</span>
+              </div>
+              <h3 class="project__title">PerfilTech IA v2</h3>
+              <p class="project__desc">
+                Developed at Fundación Universitaria Compensar, PerfilTech uses AI to analyze a student's
+                academic profile against the role they're aiming for and returns a personalized,
+                structured career report.
+              </p>
+              <ul class="project__points">
+                <li>Generates a professional profile summary from the student's background</li>
+                <li>Suggests concrete improvements and in-demand technologies</li>
+                <li>Prepares tailored technical interview questions</li>
+                <li>Structured AI responses rendered into clear report sections</li>
+              </ul>
+              <ul class="chips" aria-label="Built with">
+                <li>JavaScript</li><li>HTML</li><li>CSS</li><li>Groq API</li><li>LLM · GPT-OSS 120B</li><li>Prompt engineering</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section--tint" id="experience">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker">Experience</p>
+          <h2 class="section__title">Independent &amp; academic development</h2>
+          <p class="section__sub">Hands-on experience gained by designing, building and iterating on real applications.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <span class="tl-item__dot"></span>
+            <div class="tl-card">
+              <p class="tl-card__tag">Independent developer</p>
+              <h3>Personal software projects</h3>
+              <p>Designed and built three web applications end to end, covering UI design, client logic, REST APIs and authentication.</p>
+              <ul>
+                <li><b>Timekeeper</b>: Node.js/Express backend with Microsoft sign-in, input validation and offline-first sync.</li>
+                <li><b>Aegis Workshop</b>: a modular visual editor with a custom rendering, layering and export engine.</li>
+                <li><b>Aether</b>: an AI coding studio integrating several LLM providers through one request flow.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-item__dot"></span>
+            <div class="tl-card">
+              <p class="tl-card__tag">Academic project · Fundación Universitaria Compensar</p>
+              <h3>PerfilTech IA v2</h3>
+              <p>Built an AI-powered tool that analyzes academic profiles and generates career guidance, applying prompt design and structured output parsing with the Groq API.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION & CERTIFICATIONS ============ -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker">Education</p>
+          <h2 class="section__title">Education &amp; certifications</h2>
+        </div>
+
+        <div class="degree reveal">
+          <span class="degree__icon"><svg viewBox="0 0 24 24"><path d="M2 9 12 4l10 5-10 5L2 9Z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/></svg></span>
+          <div>
+            <p class="degree__tag">Technical degree</p>
+            <h3>Software Engineering</h3>
+            <p>Fundación Universitaria Compensar · Bogotá, Colombia</p>
+          </div>
+        </div>
+
+        <ul class="certs">
+          <li class="cert reveal" style="--i:0">
+            <a href="assets/certificates/cisco-html-essentials.pdf" target="_blank" rel="noopener">
+              <span class="cert__img"><img src="assets/img/certificates/cisco-html-essentials.webp" alt="HTML Essentials certificate" loading="lazy"></span>
+              <span class="cert__issuer">Cisco Networking Academy</span>
+              <h3>HTML Essentials</h3>
+              <span class="cert__date">October 2026</span>
+              <span class="cert__link">View credential <svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+          <li class="cert reveal" style="--i:1">
+            <a href="assets/certificates/cisco-javascript-essentials-1.pdf" target="_blank" rel="noopener">
+              <span class="cert__img"><img src="assets/img/certificates/cisco-javascript-essentials-1.webp" alt="JavaScript Essentials 1 certificate" loading="lazy"></span>
+              <span class="cert__issuer">Cisco Networking Academy</span>
+              <h3>JavaScript Essentials 1</h3>
+              <span class="cert__date">October 2026</span>
+              <span class="cert__link">View credential <svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+          <li class="cert reveal" style="--i:2">
+            <a href="assets/certificates/microsoft-testing-with-pytest.pdf" target="_blank" rel="noopener">
+              <span class="cert__img"><img src="assets/img/certificates/microsoft-testing-with-pytest.webp" alt="Testing with Pytest certificate" loading="lazy"></span>
+              <span class="cert__issuer">Microsoft Learn</span>
+              <h3>Testing with Pytest</h3>
+              <span class="cert__date">October 2026</span>
+              <span class="cert__link">View credential <svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+          <li class="cert reveal" style="--i:3">
+            <a href="assets/certificates/microsoft-advanced-testing-with-pytest.pdf" target="_blank" rel="noopener">
+              <span class="cert__img"><img src="assets/img/certificates/microsoft-advanced-testing-with-pytest.webp" alt="Advanced testing with pytest certificate" loading="lazy"></span>
+              <span class="cert__issuer">Microsoft Learn</span>
+              <h3>Advanced Testing with Pytest</h3>
+              <span class="cert__date">October 2026</span>
+              <span class="cert__link">View credential <svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+          <li class="cert cert--plain reveal" style="--i:4">
+            <div>
+              <span class="cert__img cert__img--icon"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><rect x="9" y="10.5" width="6" height="5" rx="1"/><path d="M10.5 10.5V9a1.5 1.5 0 0 1 3 0v1.5"/></svg></span>
+              <span class="cert__issuer">SENA</span>
+              <h3>Cybersecurity training</h3>
+              <span class="cert__date">Earlier coursework</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact-wrap" id="contact">
+      <div class="container">
+        <div class="contact reveal">
+          <div class="contact__glow" aria-hidden="true"></div>
+          <p class="kicker kicker--light">Contact</p>
+          <h2 class="contact__title">Let's build something together.</h2>
+          <p class="contact__sub">I'm looking for my first professional role as a software engineer. If you have an opportunity, a project or a question, I'd love to hear from you.</p>
+          <div class="contact__cards">
+            <div class="contact-card">
+              <span class="contact-card__icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+              <div>
+                <span class="contact-card__label">Email</span>
+                <a href="mailto:business.jonathan.monroy@gmail.com">business.jonathan.monroy@gmail.com</a>
+              </div>
+              <button class="copy" data-copy="business.jonathan.monroy@gmail.com" aria-label="Copy email address">
+                <svg viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>
+              </button>
+            </div>
+            <div class="contact-card">
+              <span class="contact-card__icon"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+              <div>
+                <span class="contact-card__label">Phone</span>
+                <a href="tel:+573222921742">+57 322 292 1742</a>
+              </div>
+              <button class="copy" data-copy="+57 322 292 1742" aria-label="Copy phone number">
+                <svg viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="contact__actions">
+            <a class="btn btn--light" href="mailto:business.jonathan.monroy@gmail.com">Send me an email</a>
+            <a class="btn btn--outline-light" href="https://www.linkedin.com/in/jonathan-monroy-1252002a7" target="_blank" rel="noopener">Connect on LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Jonathan Monroy Mancera</p>
+      <ul>
+        <li><a href="https://github.com/dev-jdmm" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/jonathan-monroy-1252002a7" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:business.jonathan.monroy@gmail.com">Email</a></li>
+      </ul>
+      <a class="to-top" href="#top" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+    </div>
+  </footer>
+
+  <!-- Screenshot viewer -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project screenshot" hidden>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">
+      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <figure>
+      <img id="lightboxImg" alt="">
+      <figcaption id="lightboxCap"></figcaption>
+    </figure>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
